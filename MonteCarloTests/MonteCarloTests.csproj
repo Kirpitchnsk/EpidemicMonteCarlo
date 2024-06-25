@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EpidemicMontheKarloConsole\MonteCarloConsole.csproj" />
     <ProjectReference Include="..\MonteCarloCommon\MonteCarloCommon.csproj" />
+    <ProjectReference Include="..\MonteCarloConsole\MonteCarloConsole.csproj" />
     <ProjectReference Include="..\MonteCarloWinForms\MonteCarloWinForms.csproj" />
   </ItemGroup>
 

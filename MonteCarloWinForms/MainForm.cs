@@ -85,6 +85,5 @@ namespace MonteCarloWinForms
             statisticsList = csvReader.ReadStatistics(filePath);
         }
 
-
     }
 }

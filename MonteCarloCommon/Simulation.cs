@@ -74,7 +74,7 @@ namespace EpidemicMonteCarloConsole
                 var eventProb = random.NextDouble() * lambdaTotal;
                 if (eventProb < beta * currentPopulation.SusceptibleCount * currentPopulation.InfectedCount)
                 {
-                    // Инфецировния
+                    // Инфецирование
                     currentPopulation.UpdateState(Individual.State.Susceptible, Individual.State.Exposed);
                 }
                 else if (eventProb < beta * currentPopulation.SusceptibleCount * currentPopulation.InfectedCount +
@@ -115,7 +115,7 @@ namespace EpidemicMonteCarloConsole
                 Console.WriteLine($"{record.Time:N5}\t\t{record.Susceptible}\t\t{record.Exposed}\t\t{record.Infected}\t\t{record.Recovered}\t\t{record.Dead}");
             }
 
-            Console.WriteLine("Вероятность распростраенения эпидемии: " + CalculateEpidemicSpreadProbability());
+            Console.WriteLine("Вероятность распространения эпидемии: " + CalculateEpidemicSpreadProbability());
         }
 
         /// <summary>
